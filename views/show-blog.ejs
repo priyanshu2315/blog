@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/show-blog.css">
+</head>
+<body>
+    <nav>
+
+        <div class="heading-two">
+            <img src="https://cdn-icons-png.flaticon.com/128/1187/1187595.png" alt="">
+            <h1>blog app</h1>
+        </div>
+        <div class="nav">
+            <a href="/blog/update-form/<%=blog.id%>">Update</a>
+            <a href="/blog/delete/<%=blog.id%>">Delete</a>
+        </div>
+    </nav>
+    <h1 class="blog-title"><%=blog.title%></h1>
+    <img src="<%=blog.img%>" alt="" class="blog-img">
+    <p><%=blog.content%></p>
+    <small><%=blog.user.name%></small>
+
+</body>
+</html>
